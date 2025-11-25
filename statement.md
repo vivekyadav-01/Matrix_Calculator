@@ -1,4 +1,4 @@
-# 🧮 Matrix Calculator Project Statement
+# Matrix Calculator Project Statement
 
 ## 1. Problem Statement
 
@@ -34,20 +34,21 @@ The primary target users for this Matrix Calculator include:
 
 The application provides a guided, interactive workflow with the following high-level features:
 
-### 📥 Input & Validation
+###  Input & Validation
 * **Guided Input:** Step-by-step prompts for inputting up to two matrices (A and B).
 * **Robust Error Handling:** Catches `ValueError` exceptions for non-integer dimension inputs and non-numerical element inputs, prompting the user for correction.
 * **Dimension Check:** Ensures the number of provided elements exactly matches $rows \times cols$.
 
-### ⚙️ Single-Matrix Operations
+###  Single-Matrix Operations
 | Feature | Details |
 | :--- | :--- |
 | **Inverse Calculation** | Calculates $A^{-1}$ after checking for **square dimensions** and **non-singularity** ($\det(A) \neq 0$). |
 | **Transpose Calculation** | Calculates $A^T$. |
 
-### ➕ Combined Matrix Operations
+###  Combined Matrix Operations
 | Feature | Details |
 | :--- | :--- |
 | **Addition/Subtraction** | Calculates $A \pm B$, only if matrices have **identical dimensions**. |
 | **Multiplication** | Calculates $A \times B$, only if $C_A$ (columns of A) equals $R_B$ (rows of B). |
+
 | **Identity Check** | Compares $A$ and $B$ to determine if they are **identical** (same shape and element values). |
